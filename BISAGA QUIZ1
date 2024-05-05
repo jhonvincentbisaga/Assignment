@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class SumProductCalculator {
+    public static void main(String[] args) {
+        // Get the first value from the user
+        String input1 = JOptionPane.showInputDialog("Enter the first value:");
+        double value1 = Double.parseDouble(input1);
+        
+        // Get the second value from the user
+        String input2 = JOptionPane.showInputDialog("Enter the second value:");
+        double value2 = Double.parseDouble(input2);
+        
+        // Calculate the sum and product
+        double sum = value1 + value2;
+        double product = value1 * value2;
+        
+        // Display the results using JOptionPane
+        JOptionPane.showMessageDialog(null, "Sum: " + sum + "\nProduct: " + product);
+    }
+}

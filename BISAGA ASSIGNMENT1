@@ -1,0 +1,10 @@
+import javax.swing.*;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("InputDialog Example");
+        String name = JOptionPane.showInputDialog(frame, "What's your name?");
+        JOptionPane.showMessageDialog(frame, "Hello, " + name + "!");
+        System.exit(0);
+    }
+}
